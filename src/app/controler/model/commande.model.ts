@@ -1,7 +1,7 @@
 export class Commande {
 
   public id!: number;
-  public reference!: String;
+  public reference!: string;
   public total!: number;
   public totalPaye!: number;
 

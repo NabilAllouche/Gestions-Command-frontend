@@ -16,9 +16,11 @@ export class CommandeService {
   public save(): Observable<Commande> {
     return this.http.post<Commande>(this._url, this._commande)
   }
-
+  public deleteByReference(reference : string): Observable<Commande> {
+    return this.http.delete<Commande>(this._url + 'reference/' +reference)
+  }
   public finAll(): Observable<Array<Commande>> {
-    return this.http.get<Array<Commande>>(this._url)
+    return this.http.get<Array<Commande>>(this._url + 'findAll/')
   }
 
   // @ts-ignore

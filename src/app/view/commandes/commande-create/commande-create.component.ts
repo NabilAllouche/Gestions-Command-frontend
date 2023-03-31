@@ -18,6 +18,7 @@ export class CommandeCreateComponent {
    public save(): void{
     this.commandeService.save().subscribe(data => {
       if (data != null) {
+        this.commandes.push({...this.commande}) ;
         this.commandeService.commande == null ;
         alert('SAVE SUCCESS')
       } else {
