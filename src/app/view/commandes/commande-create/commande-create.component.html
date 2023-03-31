@@ -1,0 +1,26 @@
+<div class="card">
+
+  <div class="card-header"> Creation d'une commade </div>
+
+  <div class="card-body">
+
+    <div class="form-group">
+      <label for="refernce">reference </label>
+      <input id="refernce" type="text" class="form-control" [(ngModel)]="commande.reference">
+    </div>
+
+    <div class="form-group">
+      <label for="totale">totale</label>
+      <input id="totale" type="text" class="form-control" [(ngModel)]="commande.total">
+    </div>
+
+     <div class="form-group">
+      <label for="totalePayee">totalePaye</label>
+      <input id="totalePayee" type="text" class="form-control" [(ngModel)]="commande.totalPaye">
+    </div>
+  </div>
+  <div class="card-footer">
+  <button class="btn btn-danger" type="submit"  (click)="save()" >Valider</button>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+  <th>Reference</th>
+  <th>Totale</th>
+  <th >TotalePaye </th>
+
+  </thead>
+  <tbody >
+  <tr *ngFor="let c of commandes" >
+    <td>  {{c.reference   }}</td>
+    <td> {{c.total}}</td>
+    <td> {{c.totalPaye}}</td>
+  </tr>
+  </tbody>
+</table>
+
